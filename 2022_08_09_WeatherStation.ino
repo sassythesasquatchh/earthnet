@@ -16,23 +16,23 @@ SoftwareSerial AQSensor(D5, D8); //Do not actually connect to D8 - causes boot t
 Adafruit_PM25AQI aqi = Adafruit_PM25AQI();
 Adafruit_SHT4x sht4 = Adafruit_SHT4x();
 
-#define NAME ########
-#define publish_topic "weatherStation/pub"
+#define NAME ######## // Device name, must use the name you received when you signed up for EarthNet
+#define publish_topic "weatherStation/pub" //AWS MQTT topic that the device sends messages to - DO NOT change or data will not be added to database
 #define subscribe_topic "weatherStation/sub"
 
 int pm;
 float latitude, longitude;
 PM25_AQI_Data data;
 
-const char* ssid = #############;
-const char* password = ##########;
+const char* ssid = #############; // Your WiFi name (case-sensitive)
+const char* password = ##########; // Your WiFi password (case-sensitive)
 
 // Find this awsEndpoint in the AWS Console: Manage - Things, choose your thing
 // choose Interact, its the HTTPS Rest endpoint 
-const char* awsEndpoint = "a25w67mn0bb0hm-ats.iot.us-east-1.amazonaws.com";
+const char* awsEndpoint = "a25w67mn0bb0hm-ats.iot.us-east-1.amazonaws.com"; // AWS Endpoint for connecting to MQTT client - DO NOT change 
 
 // For the two certificate strings below paste in the text of your AWS 
-// device certificate and private key:
+// device certificate and private key that were sent when you registered for EarthNet
 
 // xxxxxxxxxx-certificate.pem.crt
 static const char certificatePemCrt[] PROGMEM = R"EOF(
@@ -86,7 +86,7 @@ void msgReceived(char* topic, byte* payload, unsigned int length);
 PubSubClient client(WiFiClient);
 
 
-void connectAWS()
+void connectAWS() // Function that handles connecting/reconnecting to AWS MQTT client
 {
   delay(3000);
   WiFi.mode(WIFI_STA);
@@ -129,7 +129,8 @@ void connectAWS()
  
 
 
-bool listenToGPS(){
+bool listenToGPS(){ // Function that handles switching to GPS software serial and listening to incoming data from GPS module
+                    // Also verifies that the received data is valid and will not add it to database if invalid
   
   GPSPort.listen();
 
@@ -146,10 +147,11 @@ bool listenToGPS(){
        }
 }
 
-bool listenToAQSensor(){
+bool listenToAQSensor(){ // Function that handles switching to Air Quality Sensor software serial and listening to incoming data from AQ Sensor
+  
   AQSensor.listen(); // Switch Software Serial connection to Air Quality Sensor
 
-  delay(500); //Very important, gives time for serial messages to be read into buffer
+  delay(1200); //Very important, gives time for serial messages to be read into buffer
  
   if(AQSensor.available()>0){
     Serial.println("AQ sensor available");
@@ -165,7 +167,7 @@ bool listenToAQSensor(){
   } 
 }
 
-void setup() {
+void setup() { // Runs once when chip turns on or resets
   
   Serial.begin(115200);
   Serial.println("Serial Connection Established");
@@ -189,9 +191,7 @@ void setup() {
 unsigned long lastPublish;
 int msgCount;
 
-//int messageTimer=1000*60*5;
-int messageTimer = 1000*15;
-
+int messageTimer=1000*60*60; // Controls how often the device sends messages to AWS - recommended to leave at one hour (time measured in ms)
 
 bool readAQSensor = false;
 bool readGPS = false;
@@ -200,30 +200,31 @@ bool readGPSSinceLast = false;
 
 sensors_event_t humidity, temp;
 
-void loop() {
+void loop() { //Runs continually as long as the chip is powered
 
-  readGPS = listenToGPS();
-  if (readGPS){
+  readGPS = listenToGPS(); // Read from GPS
+  if (readGPS){ 
     readGPSSinceLast = true;
   }
   
-  readAQSensor = listenToAQSensor();
+  readAQSensor = listenToAQSensor(); // Read from Air Quality Sensor
   if (readAQSensor){
     readAQSensorSinceLast = true;
   }
 
-  if (!client.connected()){
+  if (!client.connected()){ //Check if the device is connected to AWS MQTT client, attempts to reconnect if not
     connectAWS();
   }else{
     client.loop();
   }
 
-   if (millis() - lastPublish > messageTimer) {
+   if (millis() - lastPublish > messageTimer) { //Sends a message if the chosen time period has elapsed. 
+                                                //Data is formatted in JSON for automatic appending of data to database
     String payload = "{";
 
     bool need_comma = false;
 
-    if(sht4.getEvent(&humidity, &temp)){
+    if(sht4.getEvent(&humidity, &temp)){ //If the device successfully reads from the temperature and humidity sensor, append data to message
 
       payload+=String("\"temp\":\"")+temp.temperature+String("\",") +String("\"humidity\":\"")+humidity.relative_humidity+String("\"");
       need_comma = true;
