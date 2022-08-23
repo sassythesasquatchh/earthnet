@@ -296,13 +296,3 @@ void setCurrentTime() {
   Serial.print("Current time: "); Serial.print(asctime(&timeinfo));
 }
 
-//bool readWeatherData(float &t, float &h){
-//  t=dht.readTemperature();
-//  h=dht.readHumidity();
-//  if (isnan(h) || isnan(t)) {                                                // Check if any reads failed and exit early (to try again).
-//    Serial.println("Failed to read from DHT sensor!");
-//    return false;
-//  }else{
-//    return true;
-//  }
-//}
