@@ -29,26 +29,16 @@ SoftwareSerial AQSensor(D5, D8); //Do not actually connect to D8 - causes boot t
 Adafruit_PM25AQI aqi = Adafruit_PM25AQI();
 Adafruit_SHT4x sht4 = Adafruit_SHT4x();
 
-#define NAME "prototype"
+#define NAME ########
 #define publish_topic "weatherStation/pub"
 #define subscribe_topic "weatherStation/sub"
-
-
-
-
-
-
 
 int pm;
 float latitude, longitude;
 PM25_AQI_Data data;
 
-//const char* ssid = "AI4CE_3DPrinter";
-//const char* password = "12345678";
-
-
-const char* ssid = "P A T R I C K";
-const char* password = "cheeseburger8";
+const char* ssid = #############;
+const char* password = ##########;
 
 // Find this awsEndpoint in the AWS Console: Manage - Things, choose your thing
 // choose Interact, its the HTTPS Rest endpoint 
@@ -60,55 +50,14 @@ const char* awsEndpoint = "a25w67mn0bb0hm-ats.iot.us-east-1.amazonaws.com";
 // xxxxxxxxxx-certificate.pem.crt
 static const char certificatePemCrt[] PROGMEM = R"EOF(
 -----BEGIN CERTIFICATE-----
-MIIDWjCCAkKgAwIBAgIVANPO8bNAsOPAsKFW2ZUxOFlh2fPbMA0GCSqGSIb3DQEB
-CwUAME0xSzBJBgNVBAsMQkFtYXpvbiBXZWIgU2VydmljZXMgTz1BbWF6b24uY29t
-IEluYy4gTD1TZWF0dGxlIFNUPVdhc2hpbmd0b24gQz1VUzAeFw0yMjA4MDcxNTM4
-MjdaFw00OTEyMzEyMzU5NTlaMB4xHDAaBgNVBAMME0FXUyBJb1QgQ2VydGlmaWNh
-dGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDnBegKHjW4XKeW1+9h
-q4PqaCaYR79gFze+4lxFOalYmxfxPyW3ThKsOY8Md53mHasxluFEUMcfieWyLBHr
-13zN1LBkVtk1sQL11FvCl4HYBfKOSWrNxpHylQVZwdaHDbApn2ht0z/Cnd6Xng4R
-HoQ7yFQRRBvDLu/Y5WQif1alvn8RF8ecL0JfeE8DY0QVMkaXxbpMhugV7dGLyC73
-lOTWfY2w7IlF377yIjrwHHPqFUuoGt8xpMF9GF1MsYhFf9Jsh7Dd+m+RT0yOrHXi
-99l4i2K8wtv0pS+GwZLGMb3N/KLzdP0ZUrGVNi+caOVRU8pLTPeGK899x8W8rSSK
-ApJ9AgMBAAGjYDBeMB8GA1UdIwQYMBaAFOidfM4EVhlkT11dsEgOVAv22jxGMB0G
-A1UdDgQWBBQwPV7xcGtPSSxWOu6KVFC7u0ZQWjAMBgNVHRMBAf8EAjAAMA4GA1Ud
-DwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEArwdk4EET8UwnqukaobYf8+h6
-lsj1JUtIAJ7lodOF+JaOTdhXxNrI4FJo09ItN2UH0oCxdSVTgl9cO2TM9xgjXt6R
-bezN4EV4xWfarh5fgiW4L5EAv9EADi05X5ZzyUeNNg1OpAvPhJVVkjDcVGATMmD8
-rWa6h7A2gCAD0/P6N4w9Ow588ljSMCJ/bMGlUIH/pbEtEefNxySKo5TLyewXK1wm
-VmCUqrFzn59TzSSmKBzC4rdhY6hA32ElJZIo2iSEFcaDnJyAnNxsa9EQG4DE5maV
-UlcdfS12iKfy0jfes4Kz23N/3wD1B5whiW0K8iOUb3uwBk1n9uowUTiQxVah9A==
+==
 -----END CERTIFICATE-----
 )EOF";
 
 // xxxxxxxxxx-private.pem.key
 static const char privatePemKey[] PROGMEM = R"EOF(
 -----BEGIN RSA PRIVATE KEY-----
-MIIEpAIBAAKCAQEA5wXoCh41uFynltfvYauD6mgmmEe/YBc3vuJcRTmpWJsX8T8l
-t04SrDmPDHed5h2rMZbhRFDHH4nlsiwR69d8zdSwZFbZNbEC9dRbwpeB2AXyjklq
-zcaR8pUFWcHWhw2wKZ9obdM/wp3el54OER6EO8hUEUQbwy7v2OVkIn9Wpb5/ERfH
-nC9CX3hPA2NEFTJGl8W6TIboFe3Ri8gu95Tk1n2NsOyJRd++8iI68Bxz6hVLqBrf
-MaTBfRhdTLGIRX/SbIew3fpvkU9Mjqx14vfZeItivMLb9KUvhsGSxjG9zfyi83T9
-GVKxlTYvnGjlUVPKS0z3hivPfcfFvK0kigKSfQIDAQABAoIBAEiIMjH7CiK39GYH
-pcCkeOY/jN6CqDMjFv13VEDnuaN4DixQBydl+7bW23Kum4SEDBulo1QviFT+ln86
-FuZU4Xo+LKNUIR4aVTOZWLXfm4SXWXAS3NV+YpQm9WcY1KHSSlzHD6JrkLkpl5lC
-pmf5jMq4OqyxFYZSVjtiye2KzUl7zMpX5Nw/hCqgAP2hlfbD55QinHRgTV7jIs53
-ScovgoJUle3PbniNqZjI6n+Us2NeSzI9UB9j0l4bnxN4KmT9At9m6Nm38Jvn2okV
-wRZ4UdJN9iWno683Sz55FaOGJ3u8RgGBUQaQ5MekJWcSauh/Goi56JjDKVwFBkGL
-b4qqIoECgYEA/rYoDqxDoUjVHKF/fptG3jdbop7/LjmF6hoi6j+CttL8iBAjg3MX
-FOxCo0iHfz/SCwF5D3BguTjn49/mtZIaYKd7PbXJbrYkfsqTCMPoDsh3/tGifdxZ
-5cZl94zRnx6oBQjRfTX+hPHeFl+A+Jw66n2+cEI5uUybgrx5FUL2t/cCgYEA6DES
-95d688Ypnxoxj9LHmKZb849P9y8DJ7j8KG7l1DYtgpy8uhQgOhEwX2l7oyV21Ccf
-l6i7QGEUPepQOXRmJJOO713t/QaoVbeN8+/ECw2jzsW6ui11KTtTyqTshi0YFDCe
-fcycflkuIdt3B3IWDLHUyFO5hnnaN8V1JBqItCsCgYBzD4xW3ICMih8jGN1ELxa7
-aVxuwM5bbkbNMtNU6C2/Mt47BLdWORZTMEsGAcybshPLPvYWAFjhMxClws4wdXiO
-8vlcLhN5fLRNxmrXSdA5ZVu3c7Gok3LUtmP3iNhkve9+nrYrjsmT+sKtbqUPKVv/
-85+kjHYQ+8dALq2v6hkTjwKBgQC2fPtfRNsJhRFpTnjthMgCnZ1fS5+ZsoVUTvs/
-/Aj+RKZ4JR/fT7oUaTYPhyP5EZTXIPifhanF64axMttijK1Kyf5o+vX1C6p51A3p
-TuRRm6LG/HjJoriWc15jwkNzITXviFbIoGvOkeDEE2z1mSDjUVDfMY56toJfmv16
-JrCSiQKBgQDgtBEKVwHswxmCqfU3XqiAGIcQ2eXLEIcYlgdhlOhdD9sZrBUXCwQc
-CwQc67vdAmdNK4s1+q6XTdPo/H1oT7HQUqZZuATqtnyNwW55BO+XDVfbk2xoi9N+
-Xgmc3uK0li1vSyEeQC+7yD+0XMBXYqQ/xZMasYDZqpC70W4AMMLgNA==
+==
 -----END RSA PRIVATE KEY-----
 )EOF";
 
@@ -262,11 +211,7 @@ bool readGPS = false;
 bool readAQSensorSinceLast = false;
 bool readGPSSinceLast = false;
 
-
 sensors_event_t humidity, temp;
-
-
-
 
 void loop() {
 
