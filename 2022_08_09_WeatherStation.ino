@@ -1,16 +1,3 @@
-/* ESP8266 AWS IoT
- *  
- * Simplest possible example (that I could come up with) of using an ESP8266 with AWS IoT.
- * No messing with openssl or spiffs just regular pubsub and certificates in string constants
- * 
- * This is working as at 7th Aug 2021 with the current ESP8266 Arduino core release 3.0.2
- * 
- * Author: Anthony Elder 
- * License: Apache License v2
- * 
- * 
- * 
- */
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
