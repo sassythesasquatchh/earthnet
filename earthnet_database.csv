@@ -1,0 +1,560 @@
+Device,measure_name,time,measure_value::varchar
+prototype,PM25,11-Aug-2022 2:31,11
+prototype,PM25,11-Aug-2022 3:02,8
+prototype,PM25,11-Aug-2022 3:02,12
+prototype,PM25,12-Aug-2022 13:15,5
+prototype,PM25,12-Aug-2022 13:15,3
+prototype,PM25,12-Aug-2022 13:16,4
+prototype,PM25,12-Aug-2022 13:16,4
+prototype,PM25,12-Aug-2022 13:16,4
+prototype,PM25,12-Aug-2022 13:16,6
+prototype,PM25,12-Aug-2022 13:17,4
+prototype,PM25,12-Aug-2022 13:17,3
+prototype,PM25,12-Aug-2022 13:17,5
+prototype,PM25,12-Aug-2022 13:17,6
+prototype,PM25,12-Aug-2022 13:18,4
+prototype,PM25,12-Aug-2022 13:18,4
+prototype,PM25,12-Aug-2022 13:18,5
+prototype,PM25,12-Aug-2022 14:50,5
+prototype,PM25,12-Aug-2022 14:50,3
+prototype,PM25,12-Aug-2022 14:50,4
+prototype,PM25,12-Aug-2022 14:51,4
+prototype,PM25,12-Aug-2022 14:51,3
+prototype,PM25,12-Aug-2022 14:51,4
+prototype,PM25,12-Aug-2022 14:51,3
+prototype,PM25,12-Aug-2022 14:52,3
+prototype,PM25,12-Aug-2022 14:52,3
+prototype,PM25,12-Aug-2022 14:54,5
+prototype,PM25,12-Aug-2022 14:55,7168
+prototype,PM25,12-Aug-2022 14:55,5
+prototype,PM25,12-Aug-2022 14:55,5
+prototype,PM25,12-Aug-2022 14:55,4
+prototype,PM25,12-Aug-2022 14:56,3
+prototype,PM25,12-Aug-2022 14:56,7168
+prototype,PM25,12-Aug-2022 14:57,5
+prototype,PM25,12-Aug-2022 14:57,4
+prototype,PM25,12-Aug-2022 14:58,3
+prototype,PM25,12-Aug-2022 15:02,4
+prototype,PM10,11-Aug-2022 2:31,8
+prototype,PM10,11-Aug-2022 3:02,5
+prototype,PM10,11-Aug-2022 3:02,8
+prototype,PM10,12-Aug-2022 13:15,3
+prototype,PM10,12-Aug-2022 13:15,2
+prototype,PM10,12-Aug-2022 13:16,3
+prototype,PM10,12-Aug-2022 13:16,3
+prototype,PM10,12-Aug-2022 13:16,2
+prototype,PM10,12-Aug-2022 13:16,3
+prototype,PM10,12-Aug-2022 13:17,3
+prototype,PM10,12-Aug-2022 13:17,3
+prototype,PM10,12-Aug-2022 13:17,4
+prototype,PM10,12-Aug-2022 13:17,4
+prototype,PM10,12-Aug-2022 13:18,4
+prototype,PM10,12-Aug-2022 13:18,3
+prototype,PM10,12-Aug-2022 13:18,4
+prototype,PM10,12-Aug-2022 14:50,3
+prototype,PM10,12-Aug-2022 14:50,2
+prototype,PM10,12-Aug-2022 14:50,2
+prototype,PM10,12-Aug-2022 14:51,2
+prototype,PM10,12-Aug-2022 14:51,2
+prototype,PM10,12-Aug-2022 14:51,3
+prototype,PM10,12-Aug-2022 14:51,3
+prototype,PM10,12-Aug-2022 14:52,2
+prototype,PM10,12-Aug-2022 14:52,2
+prototype,PM10,12-Aug-2022 14:54,3
+prototype,PM10,12-Aug-2022 14:55,19712
+prototype,PM10,12-Aug-2022 14:55,4
+prototype,PM10,12-Aug-2022 14:55,4
+prototype,PM10,12-Aug-2022 14:55,3
+prototype,PM10,12-Aug-2022 14:56,2
+prototype,PM10,12-Aug-2022 14:56,19712
+prototype,PM10,12-Aug-2022 14:57,3
+prototype,PM10,12-Aug-2022 14:57,3
+prototype,PM10,12-Aug-2022 14:58,2
+prototype,PM10,12-Aug-2022 15:02,4
+prototype,ID,11-Aug-2022 2:31,1
+prototype,humidity,11-Aug-2022 2:31,51.61
+prototype,humidity,11-Aug-2022 3:02,47.82
+prototype,humidity,11-Aug-2022 3:02,47.56
+prototype,humidity,12-Aug-2022 13:15,48.9
+prototype,humidity,12-Aug-2022 13:15,48.97
+prototype,humidity,12-Aug-2022 13:16,49
+prototype,humidity,12-Aug-2022 13:16,48.84
+prototype,humidity,12-Aug-2022 13:16,48.94
+prototype,humidity,12-Aug-2022 13:16,48.83
+prototype,humidity,12-Aug-2022 13:17,48.88
+prototype,humidity,12-Aug-2022 13:17,48.93
+prototype,humidity,12-Aug-2022 13:17,48.91
+prototype,humidity,12-Aug-2022 13:17,48.95
+prototype,humidity,12-Aug-2022 13:18,48.89
+prototype,humidity,12-Aug-2022 13:18,48.8
+prototype,humidity,12-Aug-2022 13:18,48.83
+prototype,humidity,12-Aug-2022 14:50,45
+prototype,humidity,12-Aug-2022 14:50,44.33
+prototype,humidity,12-Aug-2022 14:50,44.29
+prototype,humidity,12-Aug-2022 14:51,44.42
+prototype,humidity,12-Aug-2022 14:51,44.49
+prototype,humidity,12-Aug-2022 14:51,44.95
+prototype,humidity,12-Aug-2022 14:51,44.43
+prototype,humidity,12-Aug-2022 14:52,44.74
+prototype,humidity,12-Aug-2022 14:52,44.72
+prototype,humidity,12-Aug-2022 14:54,44.48
+prototype,humidity,12-Aug-2022 14:55,44.81
+prototype,humidity,12-Aug-2022 14:55,44.94
+prototype,humidity,12-Aug-2022 14:55,44.81
+prototype,humidity,12-Aug-2022 14:55,44.57
+prototype,humidity,12-Aug-2022 14:56,44.64
+prototype,humidity,12-Aug-2022 14:56,44.61
+prototype,humidity,12-Aug-2022 14:57,44.4
+prototype,humidity,12-Aug-2022 14:57,44.52
+prototype,humidity,12-Aug-2022 14:58,43.48
+prototype,humidity,12-Aug-2022 15:02,44.15
+prototype,humidity,12-Aug-2022 15:02,43.9
+prototype,temp,11-Aug-2022 2:31,27.61
+prototype,temp,11-Aug-2022 3:02,30.42
+prototype,temp,11-Aug-2022 3:02,30.39
+prototype,temp,12-Aug-2022 13:15,29.1
+prototype,temp,12-Aug-2022 13:15,29.11
+prototype,temp,12-Aug-2022 13:16,29.11
+prototype,temp,12-Aug-2022 13:16,29.1
+prototype,temp,12-Aug-2022 13:16,29.13
+prototype,temp,12-Aug-2022 13:16,29.16
+prototype,temp,12-Aug-2022 13:17,29.16
+prototype,temp,12-Aug-2022 13:17,29.17
+prototype,temp,12-Aug-2022 13:17,29.16
+prototype,temp,12-Aug-2022 13:17,29.16
+prototype,temp,12-Aug-2022 13:18,29.17
+prototype,temp,12-Aug-2022 13:18,29.19
+prototype,temp,12-Aug-2022 13:18,29.19
+prototype,temp,12-Aug-2022 14:50,29.13
+prototype,temp,12-Aug-2022 14:50,29.15
+prototype,temp,12-Aug-2022 14:50,29.17
+prototype,temp,12-Aug-2022 14:51,29.18
+prototype,temp,12-Aug-2022 14:51,29.18
+prototype,temp,12-Aug-2022 14:51,29.2
+prototype,temp,12-Aug-2022 14:51,29.21
+prototype,temp,12-Aug-2022 14:52,29.25
+prototype,temp,12-Aug-2022 14:52,29.22
+prototype,temp,12-Aug-2022 14:54,29.35
+prototype,temp,12-Aug-2022 14:55,29.37
+prototype,temp,12-Aug-2022 14:55,29.4
+prototype,temp,12-Aug-2022 14:55,29.41
+prototype,temp,12-Aug-2022 14:55,29.41
+prototype,temp,12-Aug-2022 14:56,29.41
+prototype,temp,12-Aug-2022 14:56,29.41
+prototype,temp,12-Aug-2022 14:57,29.46
+prototype,temp,12-Aug-2022 14:57,29.47
+prototype,temp,12-Aug-2022 14:58,29.46
+prototype,temp,12-Aug-2022 15:02,29.47
+prototype,temp,12-Aug-2022 15:02,29.46
+Device2,temp,11-Aug-2022 2:35,27.78
+Device2,temp,11-Aug-2022 2:38,27.87
+Device2,temp,11-Aug-2022 2:41,27.96
+Device2,temp,11-Aug-2022 2:44,28
+Device2,temp,12-Aug-2022 15:06,29.54
+Device2,temp,12-Aug-2022 15:08,29.6
+Device2,temp,12-Aug-2022 15:09,29.61
+Device2,temp,12-Aug-2022 15:09,29.61
+Device2,temp,12-Aug-2022 15:09,29.63
+Device2,temp,12-Aug-2022 15:09,29.63
+Device2,temp,12-Aug-2022 15:10,29.61
+Device2,temp,12-Aug-2022 15:10,29.63
+Device2,temp,12-Aug-2022 15:10,29.61
+Device2,temp,12-Aug-2022 15:11,29.64
+Device2,temp,12-Aug-2022 15:11,29.61
+Device2,temp,12-Aug-2022 15:11,29.63
+Device2,temp,12-Aug-2022 15:11,29.65
+Device2,temp,12-Aug-2022 15:12,29.63
+Device2,temp,12-Aug-2022 15:13,29.65
+Device2,temp,12-Aug-2022 15:13,29.68
+Device2,temp,12-Aug-2022 15:14,29.68
+Device2,temp,12-Aug-2022 15:14,29.71
+Device2,temp,12-Aug-2022 15:14,29.68
+Device2,temp,12-Aug-2022 15:14,29.67
+Device2,temp,12-Aug-2022 15:15,29.71
+Device2,temp,12-Aug-2022 15:15,29.68
+Device2,PM25,11-Aug-2022 2:35,13
+Device2,PM25,11-Aug-2022 2:38,2816
+Device2,PM25,11-Aug-2022 2:41,13
+Device2,PM25,11-Aug-2022 2:44,13
+Device2,PM25,12-Aug-2022 15:06,4
+Device2,PM25,12-Aug-2022 15:08,5
+Device2,PM25,12-Aug-2022 15:09,5
+Device2,PM25,12-Aug-2022 15:09,4
+Device2,PM25,12-Aug-2022 15:09,3
+Device2,PM25,12-Aug-2022 15:09,3
+Device2,PM25,12-Aug-2022 15:10,7168
+Device2,PM25,12-Aug-2022 15:13,3
+Device2,PM25,12-Aug-2022 15:13,3
+Device2,PM25,12-Aug-2022 15:14,2
+Device2,PM25,12-Aug-2022 15:14,2
+Device2,PM25,12-Aug-2022 15:14,2
+Device2,PM25,12-Aug-2022 15:14,3
+Device2,PM25,12-Aug-2022 15:15,4
+Device2,PM25,12-Aug-2022 15:15,4
+Device2,humidity,11-Aug-2022 2:35,51.09
+Device2,humidity,11-Aug-2022 2:38,50.85
+Device2,humidity,11-Aug-2022 2:41,50.71
+Device2,humidity,11-Aug-2022 2:44,50.43
+Device2,humidity,12-Aug-2022 15:06,42.67
+Device2,humidity,12-Aug-2022 15:08,42.99
+Device2,humidity,12-Aug-2022 15:09,42.63
+Device2,humidity,12-Aug-2022 15:09,43.37
+Device2,humidity,12-Aug-2022 15:09,42.92
+Device2,humidity,12-Aug-2022 15:09,42.73
+Device2,humidity,12-Aug-2022 15:10,43.39
+Device2,humidity,12-Aug-2022 15:10,42.54
+Device2,humidity,12-Aug-2022 15:10,41.93
+Device2,humidity,12-Aug-2022 15:11,42.49
+Device2,humidity,12-Aug-2022 15:11,42.08
+Device2,humidity,12-Aug-2022 15:11,42.9
+Device2,humidity,12-Aug-2022 15:11,42.39
+Device2,humidity,12-Aug-2022 15:12,41.93
+Device2,humidity,12-Aug-2022 15:13,42.45
+Device2,humidity,12-Aug-2022 15:13,42.01
+Device2,humidity,12-Aug-2022 15:14,42.46
+Device2,humidity,12-Aug-2022 15:14,42.36
+Device2,humidity,12-Aug-2022 15:14,41.99
+Device2,humidity,12-Aug-2022 15:14,42.47
+Device2,humidity,12-Aug-2022 15:15,42.29
+Device2,humidity,12-Aug-2022 15:15,41.8
+Device2,PM10,11-Aug-2022 2:35,10
+Device2,PM10,11-Aug-2022 2:38,2048
+Device2,PM10,11-Aug-2022 2:41,9
+Device2,PM10,11-Aug-2022 2:44,8
+Device2,PM10,12-Aug-2022 15:06,3
+Device2,PM10,12-Aug-2022 15:08,3
+Device2,PM10,12-Aug-2022 15:09,3
+Device2,PM10,12-Aug-2022 15:09,3
+Device2,PM10,12-Aug-2022 15:09,2
+Device2,PM10,12-Aug-2022 15:09,3
+Device2,PM10,12-Aug-2022 15:10,19712
+Device2,PM10,12-Aug-2022 15:13,1
+Device2,PM10,12-Aug-2022 15:13,3
+Device2,PM10,12-Aug-2022 15:14,1
+Device2,PM10,12-Aug-2022 15:14,1
+Device2,PM10,12-Aug-2022 15:14,2
+Device2,PM10,12-Aug-2022 15:14,3
+Device2,PM10,12-Aug-2022 15:15,3
+Device2,PM10,12-Aug-2022 15:15,3
+prototype,lat,12-Aug-2022 14:54,40.64
+prototype,lat,12-Aug-2022 14:55,40.64
+prototype,lat,12-Aug-2022 14:55,40.64
+prototype,lat,12-Aug-2022 14:55,40.64
+prototype,lat,12-Aug-2022 14:55,40.64
+prototype,lat,12-Aug-2022 14:56,40.64
+prototype,lat,12-Aug-2022 14:56,40.64
+prototype,lat,12-Aug-2022 14:57,40.64
+prototype,lat,12-Aug-2022 14:57,40.64
+prototype,lat,12-Aug-2022 14:58,40.64
+prototype,lat,12-Aug-2022 15:02,40.64
+prototype,lat,12-Aug-2022 15:02,40.64
+prototype,long,12-Aug-2022 14:54,-73.99
+prototype,long,12-Aug-2022 14:55,-73.99
+prototype,long,12-Aug-2022 14:55,-73.99
+prototype,long,12-Aug-2022 14:55,-73.99
+prototype,long,12-Aug-2022 14:55,-73.99
+prototype,long,12-Aug-2022 14:56,-73.99
+prototype,long,12-Aug-2022 14:56,-73.99
+prototype,long,12-Aug-2022 14:57,-73.99
+prototype,long,12-Aug-2022 14:57,-73.99
+prototype,long,12-Aug-2022 14:58,-73.99
+prototype,long,12-Aug-2022 15:02,-73.99
+prototype,long,12-Aug-2022 15:02,-73.99
+Device2,long,12-Aug-2022 15:06,-73.99
+Device2,long,12-Aug-2022 15:08,-73.99
+Device2,long,12-Aug-2022 15:09,-73.99
+Device2,long,12-Aug-2022 15:09,-73.99
+Device2,long,12-Aug-2022 15:09,-73.99
+Device2,long,12-Aug-2022 15:09,-73.99
+Device2,long,12-Aug-2022 15:10,-73.99
+Device2,long,12-Aug-2022 15:10,-73.99
+Device2,long,12-Aug-2022 15:10,-73.99
+Device2,long,12-Aug-2022 15:11,-73.99
+Device2,long,12-Aug-2022 15:11,-73.99
+Device2,long,12-Aug-2022 15:11,-73.99
+Device2,long,12-Aug-2022 15:11,-73.99
+Device2,long,12-Aug-2022 15:12,-73.99
+Device2,long,12-Aug-2022 15:13,-73.99
+Device2,long,12-Aug-2022 15:13,-73.99
+Device2,long,12-Aug-2022 15:14,-73.99
+Device2,long,12-Aug-2022 15:14,-73.99
+Device2,long,12-Aug-2022 15:14,-73.99
+Device2,long,12-Aug-2022 15:14,-73.99
+Device2,long,12-Aug-2022 15:15,-73.99
+Device2,long,12-Aug-2022 15:15,-73.99
+Device2,lat,12-Aug-2022 15:06,40.64
+Device2,lat,12-Aug-2022 15:08,40.64
+Device2,lat,12-Aug-2022 15:09,40.64
+Device2,lat,12-Aug-2022 15:09,40.64
+Device2,lat,12-Aug-2022 15:09,40.64
+Device2,lat,12-Aug-2022 15:09,40.64
+Device2,lat,12-Aug-2022 15:10,40.64
+Device2,lat,12-Aug-2022 15:10,40.64
+Device2,lat,12-Aug-2022 15:10,40.64
+Device2,lat,12-Aug-2022 15:11,40.64
+Device2,lat,12-Aug-2022 15:11,40.64
+Device2,lat,12-Aug-2022 15:11,40.64
+Device2,lat,12-Aug-2022 15:11,40.64
+Device2,lat,12-Aug-2022 15:12,40.64
+Device2,lat,12-Aug-2022 15:13,40.64
+Device2,lat,12-Aug-2022 15:13,40.64
+Device2,lat,12-Aug-2022 15:14,40.64
+Device2,lat,12-Aug-2022 15:14,40.64
+Device2,lat,12-Aug-2022 15:14,40.64
+Device2,lat,12-Aug-2022 15:14,40.64
+Device2,lat,12-Aug-2022 15:15,40.64
+Device2,lat,12-Aug-2022 15:15,40.64
+NYUAD,PM10,05-Sep-2022 9:19,0
+NYUAD,PM10,05-Sep-2022 9:22,0
+NYUAD,PM10,05-Sep-2022 9:25,1
+NYUAD,PM10,05-Sep-2022 9:28,1
+NYUAD,PM10,05-Sep-2022 9:31,0
+NYUAD,PM10,05-Sep-2022 9:34,1
+NYUAD,PM10,05-Sep-2022 9:37,1
+NYUAD,PM10,05-Sep-2022 9:40,1
+NYUAD,PM10,05-Sep-2022 9:43,0
+NYUAD,PM10,05-Sep-2022 10:05,2
+NYUAD,PM10,05-Sep-2022 10:08,0
+NYUAD,PM10,05-Sep-2022 10:11,1
+NYUAD,PM10,05-Sep-2022 14:12,1
+NYUAD,PM10,10-Sep-2022 16:33,11
+NYUAD,PM10,10-Sep-2022 16:36,11
+NYUAD,PM10,10-Sep-2022 16:39,43
+NYUAD,PM10,10-Sep-2022 16:46,36
+NYUAD,PM10,10-Sep-2022 17:14,45
+NYUAD,PM10,10-Sep-2022 17:17,46
+NYUAD,PM10,10-Sep-2022 17:20,40
+NYUAD,PM10,10-Sep-2022 17:58,40
+NYUAD,PM10,10-Sep-2022 18:02,41
+NYUAD,temp,05-Sep-2022 9:19,23.39
+NYUAD,temp,05-Sep-2022 9:22,23.24
+NYUAD,temp,05-Sep-2022 9:25,23.16
+NYUAD,temp,05-Sep-2022 9:28,23.11
+NYUAD,temp,05-Sep-2022 9:31,23.12
+NYUAD,temp,05-Sep-2022 9:34,23.06
+NYUAD,temp,05-Sep-2022 9:37,23
+NYUAD,temp,05-Sep-2022 9:40,23.03
+NYUAD,temp,05-Sep-2022 9:43,23.01
+NYUAD,temp,05-Sep-2022 10:05,22.92
+NYUAD,temp,05-Sep-2022 10:08,23
+NYUAD,temp,05-Sep-2022 10:11,23
+NYUAD,temp,05-Sep-2022 14:12,23.8
+NYUAD,temp,10-Sep-2022 16:33,23.42
+NYUAD,temp,10-Sep-2022 16:36,24.54
+NYUAD,temp,10-Sep-2022 16:39,30
+NYUAD,temp,10-Sep-2022 16:46,32.73
+NYUAD,temp,10-Sep-2022 17:14,32.58
+NYUAD,temp,10-Sep-2022 17:17,32.7
+NYUAD,temp,10-Sep-2022 17:20,32.75
+NYUAD,temp,10-Sep-2022 17:58,32.8
+NYUAD,temp,10-Sep-2022 18:02,32.5
+NYUAD,PM25,05-Sep-2022 9:19,1
+NYUAD,PM25,05-Sep-2022 9:22,0
+NYUAD,PM25,05-Sep-2022 9:25,1
+NYUAD,PM25,05-Sep-2022 9:28,1
+NYUAD,PM25,05-Sep-2022 9:31,0
+NYUAD,PM25,05-Sep-2022 9:34,1
+NYUAD,PM25,05-Sep-2022 9:37,1
+NYUAD,PM25,05-Sep-2022 9:40,1
+NYUAD,PM25,05-Sep-2022 9:43,0
+NYUAD,PM25,05-Sep-2022 10:05,4
+NYUAD,PM25,05-Sep-2022 10:08,0
+NYUAD,PM25,05-Sep-2022 10:11,1
+NYUAD,PM25,05-Sep-2022 14:12,1
+NYUAD,PM25,10-Sep-2022 16:33,18
+NYUAD,PM25,10-Sep-2022 16:36,18
+NYUAD,PM25,10-Sep-2022 16:39,76
+NYUAD,PM25,10-Sep-2022 16:46,58
+NYUAD,PM25,10-Sep-2022 17:14,74
+NYUAD,PM25,10-Sep-2022 17:17,71
+NYUAD,PM25,10-Sep-2022 17:20,61
+NYUAD,PM25,10-Sep-2022 17:58,75
+NYUAD,PM25,10-Sep-2022 18:02,59
+NYUAD,humidity,05-Sep-2022 9:19,54.59
+NYUAD,humidity,05-Sep-2022 9:22,54.45
+NYUAD,humidity,05-Sep-2022 9:25,54.58
+NYUAD,humidity,05-Sep-2022 9:28,54.82
+NYUAD,humidity,05-Sep-2022 9:31,54.65
+NYUAD,humidity,05-Sep-2022 9:34,54.48
+NYUAD,humidity,05-Sep-2022 9:37,54.77
+NYUAD,humidity,05-Sep-2022 9:40,54.77
+NYUAD,humidity,05-Sep-2022 9:43,54.82
+NYUAD,humidity,05-Sep-2022 10:05,55.4
+NYUAD,humidity,05-Sep-2022 10:08,54.82
+NYUAD,humidity,05-Sep-2022 10:11,54.98
+NYUAD,humidity,05-Sep-2022 14:12,54.45
+NYUAD,humidity,10-Sep-2022 16:33,58.28
+NYUAD,humidity,10-Sep-2022 16:36,55.17
+NYUAD,humidity,10-Sep-2022 16:39,82.78
+NYUAD,humidity,10-Sep-2022 16:46,74.63
+NYUAD,humidity,10-Sep-2022 17:14,76.55
+NYUAD,humidity,10-Sep-2022 17:17,75.78
+NYUAD,humidity,10-Sep-2022 17:20,75.59
+NYUAD,humidity,10-Sep-2022 17:58,77.96
+NYUAD,humidity,10-Sep-2022 18:02,79.34
+NYUAD,long,10-Sep-2022 17:58,54.43
+NYUAD,lat,10-Sep-2022 17:58,24.52
+NYU Ghana,lat,10-Sep-2022 17:58,5.57
+NYU Ghana,long,10-Sep-2022 17:58,-0.17
+NYU Sydney,lat,10-Sep-2022 17:58,-33.86
+NYU Sydney,long,10-Sep-2022 17:58,151.21
+NYU Berlin,lat,10-Sep-2022 17:58,52.54
+NYU Berlin,long,10-Sep-2022 17:58,13.41
+NYU NY,lat,05-Sep-2022 9:34,40.73
+NYU NY,long,05-Sep-2022 9:37,-74
+NYU Prague,lat,05-Sep-2022 9:40,50.09
+NYU Prague,long,05-Sep-2022 9:43,14.42
+NYU Buenos Aires,lat,05-Sep-2022 10:05,-34.59
+NYU Buenos Aires,long,05-Sep-2022 10:08,-58.41
+NYU Washington DC,lat,05-Sep-2022 10:11,38.9
+NYU Washington DC,long,05-Sep-2022 14:12,-77.03
+NYU Florence,lat,10-Sep-2022 16:33,43.8
+NYU Florence,long,10-Sep-2022 16:36,11.26
+NYU London,lat,10-Sep-2022 16:39,51.77
+NYU London,long,10-Sep-2022 16:46,0.55
+NYU Paris,lat,05-Sep-2022 10:05,48.85
+NYU Paris,long,05-Sep-2022 10:08,2.35
+NYU Madrid,lat,05-Sep-2022 10:11,40.68
+NYU Madrid,long,05-Sep-2022 14:12,-2.97
+NYU Tel Aviv,lat,10-Sep-2022 16:33,32.09
+NYU Tel Aviv,long,10-Sep-2022 16:36,34.79
+NYU Shanghai,lat,10-Sep-2022 16:39,31.23
+NYU Shanghai,long,10-Sep-2022 16:46,121.53
+NYU Shanghai,temp,10-Sep-2022 16:39,29.60152842
+NYU Shanghai,temp,11-Sep-2022 16:39,29.82327727
+NYU Shanghai,temp,12-Sep-2022 16:39,29.08887713
+NYU Shanghai,temp,13-Sep-2022 16:39,29.02455799
+NYU Shanghai,temp,14-Sep-2022 16:39,29.2315525
+NYU Shanghai,temp,15-Sep-2022 16:39,28.35029
+NYU Shanghai,temp,16-Sep-2022 16:39,29.40390337
+NYU Shanghai,temp,17-Sep-2022 16:39,28.01447635
+NYU Shanghai,temp,18-Sep-2022 16:39,28.07224837
+NYU Shanghai,temp,19-Sep-2022 16:39,28.119319
+NYU Shanghai,temp,20-Sep-2022 16:39,29.09424977
+NYU Shanghai,temp,21-Sep-2022 16:39,29.92848789
+NYU Shanghai,temp,22-Sep-2022 16:39,29.00832743
+NYU Shanghai,temp,23-Sep-2022 16:39,28.05771115
+NYU Shanghai,temp,24-Sep-2022 16:39,29.1733487
+NYU Shanghai,temp,25-Sep-2022 16:39,28.78587279
+NYU Shanghai,temp,26-Sep-2022 16:39,28.36019049
+NYU Shanghai,temp,27-Sep-2022 16:39,29.6436661
+NYU Shanghai,temp,28-Sep-2022 16:39,29.11801465
+NYU Shanghai,temp,29-Sep-2022 16:39,29.61713919
+NYU Shanghai,temp,30-Sep-2022 16:39,29.5800488
+NYU Shanghai,temp,01-Oct-2022 16:39,29.16239995
+NYU Shanghai,temp,02-Oct-2022 16:39,29.06650271
+NYU Berlin,temp,10-Sep-2022 16:39,16.7178571
+NYU Berlin,temp,11-Sep-2022 16:39,14.97042702
+NYU Berlin,temp,12-Sep-2022 16:39,15.92938575
+NYU Berlin,temp,13-Sep-2022 16:39,16.73419953
+NYU Berlin,temp,14-Sep-2022 16:39,15.24807312
+NYU Berlin,temp,15-Sep-2022 16:39,15.82064918
+NYU Berlin,temp,16-Sep-2022 16:39,15.82963003
+NYU Berlin,temp,17-Sep-2022 16:39,14.13661543
+NYU Berlin,temp,18-Sep-2022 16:39,14.68480095
+NYU Berlin,temp,19-Sep-2022 16:39,16.79724935
+NYU Berlin,temp,20-Sep-2022 16:39,16.25788331
+NYU Berlin,temp,21-Sep-2022 16:39,14.10850964
+NYU Berlin,temp,22-Sep-2022 16:39,14.20505038
+NYU Berlin,temp,23-Sep-2022 16:39,16.14282212
+NYU Berlin,temp,24-Sep-2022 16:39,15.36267545
+NYU Berlin,temp,25-Sep-2022 16:39,15.8911766
+NYU Berlin,temp,26-Sep-2022 16:39,14.1009201
+NYU Berlin,temp,27-Sep-2022 16:39,16.91380898
+NYU Berlin,temp,28-Sep-2022 16:39,15.85079563
+NYU Berlin,temp,29-Sep-2022 16:39,15.74562238
+NYU Berlin,temp,30-Sep-2022 16:39,14.22621362
+NYU Berlin,temp,01-Oct-2022 16:39,16.14256889
+NYU Berlin,temp,02-Oct-2022 16:39,16.17163314
+NYU Sydney,temp,10-Sep-2022 16:39,24.73979343
+NYU Sydney,temp,11-Sep-2022 16:39,23.58465531
+NYU Sydney,temp,12-Sep-2022 16:39,23.13352157
+NYU Sydney,temp,13-Sep-2022 16:39,23.61207033
+NYU Sydney,temp,14-Sep-2022 16:39,24.11880649
+NYU Sydney,temp,15-Sep-2022 16:39,23.39959639
+NYU Sydney,temp,16-Sep-2022 16:39,22.49614442
+NYU Sydney,temp,17-Sep-2022 16:39,23.07815478
+NYU Sydney,temp,18-Sep-2022 16:39,22.96397077
+NYU Sydney,temp,19-Sep-2022 16:39,22.32999166
+NYU Sydney,temp,20-Sep-2022 16:39,22.14160101
+NYU Sydney,temp,21-Sep-2022 16:39,22.36771007
+NYU Sydney,temp,22-Sep-2022 16:39,24.69264039
+NYU Sydney,temp,23-Sep-2022 16:39,22.23362859
+NYU Sydney,temp,24-Sep-2022 16:39,23.71970943
+NYU Sydney,temp,25-Sep-2022 16:39,24.45235312
+NYU Sydney,temp,26-Sep-2022 16:39,23.9492943
+NYU Sydney,temp,27-Sep-2022 16:39,22.06471803
+NYU Sydney,temp,28-Sep-2022 16:39,22.80044724
+NYU Sydney,temp,29-Sep-2022 16:39,24.39595604
+NYU Sydney,temp,30-Sep-2022 16:39,23.0775668
+NYU Sydney,temp,01-Oct-2022 16:39,22.8908125
+NYU Sydney,temp,02-Oct-2022 16:39,22.11915097
+NYU Sydney,humidity,10-Sep-2022 16:39,86.8661488
+NYU Sydney,humidity,11-Sep-2022 16:39,85.04535349
+NYU Sydney,humidity,12-Sep-2022 16:39,84.23228028
+NYU Sydney,humidity,13-Sep-2022 16:39,83.84695264
+NYU Sydney,humidity,14-Sep-2022 16:39,83.50992012
+NYU Sydney,humidity,15-Sep-2022 16:39,85.070696
+NYU Sydney,humidity,16-Sep-2022 16:39,82.52569343
+NYU Sydney,humidity,17-Sep-2022 16:39,84.99022845
+NYU Sydney,humidity,18-Sep-2022 16:39,80.56272789
+NYU Sydney,humidity,19-Sep-2022 16:39,84.21311978
+NYU Sydney,humidity,20-Sep-2022 16:39,83.82272543
+NYU Sydney,humidity,21-Sep-2022 16:39,81.75982835
+NYU Sydney,humidity,22-Sep-2022 16:39,82.76585233
+NYU Sydney,humidity,23-Sep-2022 16:39,78.9075159
+NYU Sydney,humidity,24-Sep-2022 16:39,78.58571664
+NYU Sydney,humidity,25-Sep-2022 16:39,80.81940688
+NYU Sydney,humidity,26-Sep-2022 16:39,80.81826021
+NYU Sydney,humidity,27-Sep-2022 16:39,80.18605466
+NYU Sydney,humidity,28-Sep-2022 16:39,78.49082891
+NYU Sydney,humidity,29-Sep-2022 16:39,78.9942038
+NYU Sydney,humidity,30-Sep-2022 16:39,75.26454989
+NYU Sydney,humidity,01-Oct-2022 16:39,77.84234156
+NYU Sydney,humidity,02-Oct-2022 16:39,74.13566326
+NYU Sydney,PM25,10-Sep-2022 16:39,29.58648282
+NYU Sydney,PM25,11-Sep-2022 16:39,26.92621366
+NYU Sydney,PM25,12-Sep-2022 16:39,31.91271185
+NYU Sydney,PM25,13-Sep-2022 16:39,29.2508306
+NYU Sydney,PM25,14-Sep-2022 16:39,35.79968805
+NYU Sydney,PM25,15-Sep-2022 16:39,28.47734319
+NYU Sydney,PM25,16-Sep-2022 16:39,31.91561711
+NYU Sydney,PM25,17-Sep-2022 16:39,26.32331791
+NYU Sydney,PM25,18-Sep-2022 16:39,26.75368565
+NYU Sydney,PM25,19-Sep-2022 16:39,36.94688675
+NYU Sydney,PM25,20-Sep-2022 16:39,31.32999133
+NYU Sydney,PM25,21-Sep-2022 16:39,33.12792294
+NYU Sydney,PM25,22-Sep-2022 16:39,27.8282295
+NYU Sydney,PM25,23-Sep-2022 16:39,35.74679021
+NYU Sydney,PM25,24-Sep-2022 16:39,36.31069264
+NYU Sydney,PM25,25-Sep-2022 16:39,32.40114613
+NYU Sydney,PM25,26-Sep-2022 16:39,25.06953405
+NYU Sydney,PM25,27-Sep-2022 16:39,28.55457034
+NYU Sydney,PM25,28-Sep-2022 16:39,35.85389615
+NYU Sydney,PM25,29-Sep-2022 16:39,27.21734433
+NYU Sydney,PM25,30-Sep-2022 16:39,26.20286186
+NYU Sydney,PM25,01-Oct-2022 16:39,32.39812678
+NYU Sydney,PM25,02-Oct-2022 16:39,29.44523143
+NYU Sydney,PM10,10-Sep-2022 16:39,48.56854317
+NYU Sydney,PM10,11-Sep-2022 16:39,64.83985873
+NYU Sydney,PM10,12-Sep-2022 16:39,49.21081177
+NYU Sydney,PM10,13-Sep-2022 16:39,49.75344219
+NYU Sydney,PM10,14-Sep-2022 16:39,70.11700917
+NYU Sydney,PM10,15-Sep-2022 16:39,59.50433862
+NYU Sydney,PM10,16-Sep-2022 16:39,59.72048691
+NYU Sydney,PM10,17-Sep-2022 16:39,63.42277154
+NYU Sydney,PM10,18-Sep-2022 16:39,56.53605415
+NYU Sydney,PM10,19-Sep-2022 16:39,54.73599819
+NYU Sydney,PM10,20-Sep-2022 16:39,58.74040746
+NYU Sydney,PM10,21-Sep-2022 16:39,61.24654417
+NYU Sydney,PM10,22-Sep-2022 16:39,69.38694219
+NYU Sydney,PM10,23-Sep-2022 16:39,51.78471409
+NYU Sydney,PM10,24-Sep-2022 16:39,56.22033059
+NYU Sydney,PM10,25-Sep-2022 16:39,54.50071681
+NYU Sydney,PM10,26-Sep-2022 16:39,56.30018588
+NYU Sydney,PM10,27-Sep-2022 16:39,59.12125551
+NYU Sydney,PM10,28-Sep-2022 16:39,54.13168904
+NYU Sydney,PM10,29-Sep-2022 16:39,46.20830599
+NYU Sydney,PM10,30-Sep-2022 16:39,49.16349633
+NYU Sydney,PM10,01-Oct-2022 16:39,51.97870134
+NYU Sydney,PM10,02-Oct-2022 16:39,54.89813655

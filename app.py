@@ -1,6 +1,10 @@
 from dash import Dash, html, dcc, Input, Output
 import pandas as pd
 import plotly.express as px
+# import os,sys
+
+
+
 
 filename = 'earthnet_database.csv'
 df = pd.read_csv(filename,parse_dates=['time'])
@@ -42,12 +46,8 @@ app.layout = html.Div([
         dcc.Graph(
             figure = fig,
             id = 'map',
-            hoverData={'points': [{'customdata': 'Device2'}]}
+            hoverData={'points': [{'customdata': ['Device2']}]}
         )
-    ]),
-   
-    html.Div([
-        dcc.Graph(id='timeseries')
     ]),
 
     html.Div([
@@ -56,12 +56,22 @@ app.layout = html.Div([
             id = 'parameter_choice',
             value = 'temp'
         )
+    ]),
+   
+    html.Div([
+        dcc.Graph(id='timeseries')
     ])
+
+    
 ])
 
-def create_time_series(dff):
+def create_time_series(dff, chosen_parameter):
 
-    fig = px.scatter(dff, x='time', y='measure_value::varchar')
+    fig = px.scatter(dff, x='time', y='measure_value::varchar', 
+    labels = {
+        'time':'Time',
+        'measure_value::varchar' : chosen_parameter
+    })
 
     fig.update_traces(mode='lines+markers')
 
@@ -75,13 +85,14 @@ def create_time_series(dff):
     Input('parameter_choice', 'value'))
 
 def update_timeseries(hoverData, chosen_parameter):
-    print(hoverData)
-    print(hoverData['points'][0]['customdata'][0])
-    dff=df[df['Device'] == hoverData['points'][0]['customdata'][0]]
+    # print(hoverData)
+    # print(hoverData['points'][0]['customdata'][0])
+    dependent_variable = hoverData['points'][0]['customdata'][0]
+    dff=df[df['Device'] == dependent_variable]
     dff=dff[dff['measure_name'] == chosen_parameter]
-    print(dff)
+    # print(dff)
     
-    return create_time_series(dff)
+    return create_time_series(dff, chosen_parameter)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
