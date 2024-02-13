@@ -53,11 +53,13 @@ app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 component_style = {"width": "100%", "margin-bottom": "10px", "text-align": "center"}
 dropdown_style = {
-    "width": "91.5%",
+    "width": "100%",
     "margin-bottom": "10px",
     "text-align": "center",
     "margin-right": "auto",
     "margin-left": "auto",
+    # "padding-left": "50px",
+    # "padding-right": "50px",
 }
 inner_div_style = {"margin": "auto", "padding": "20px", "box-sizing": "border-box"}
 outer_div_style = {"width": "100%", "background-color": "#FDFBF9"}
@@ -85,7 +87,8 @@ app.layout = html.Div(
                             ],
                             id="parameter_choice",
                             value="temp",
-                        )
+                            style={"padding-left": "76px", "padding-right": "76px"},
+                        ),
                     ],
                     style=dropdown_style,
                 ),  # Set width to 100% for the dropdown
