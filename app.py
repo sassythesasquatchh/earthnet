@@ -5,7 +5,7 @@ import plotly.express as px
 # import os,sys
 
 
-filename = "earthnet_database2.csv"
+filename = "earthnet_database.csv"
 df = pd.read_csv(filename, parse_dates=["time"])
 df["measure_value::varchar"] = pd.to_numeric(df["measure_value::varchar"])
 
