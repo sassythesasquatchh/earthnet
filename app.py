@@ -78,6 +78,13 @@ app.layout = html.Div(
     [
         html.Div(
             [
+                html.H4(
+                    "Hover over a device to view its recent data!",
+                    style={
+                        "font-family": "Arial",
+                        "text-align": "center",
+                    },
+                ),
                 html.Div(
                     [
                         dcc.Graph(
