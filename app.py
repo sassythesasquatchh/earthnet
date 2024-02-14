@@ -43,6 +43,11 @@ fig = px.scatter_mapbox(
     zoom=1,
 )
 fig.update_layout({"plot_bgcolor": "rgba(0,0,0,0)", "paper_bgcolor": "rgba(0,0,0,0)"})
+fig.update_layout(
+    title_text="Hover over a device to view its recent data!",
+    title_x=0.5,  # Center the title
+    title_font=dict(size=23, family="Arial"),  # Set the font size and family
+)
 
 
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
@@ -78,13 +83,13 @@ app.layout = html.Div(
     [
         html.Div(
             [
-                html.H4(
-                    "Hover over a device to view its recent data!",
-                    style={
-                        "font-family": "Arial",
-                        "text-align": "center",
-                    },
-                ),
+                # html.H4(
+                #     "Hover over a device to view its recent data!",
+                #     style={
+                #         "font-family": "Arial",
+                #         "text-align": "center",
+                #     },
+                # ),
                 html.Div(
                     [
                         dcc.Graph(
